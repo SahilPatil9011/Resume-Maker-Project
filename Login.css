@@ -1,0 +1,204 @@
+@import url();
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-image: url(http://tinyurl.com/ksmyc67e); */
+    /* background-image: url(https://previews.123rf.com/images/seamartini/seamartini1110/seamartini111000277/11006277-seamless-rock-stone-background-for-design-and-decorate.jpg); */
+   /* background-image: url(http://tinyurl.com/36sfm2fu); */
+    /* background-image: url(https://tinyurl.com/2evfbnyz); */
+    background-image: url(https://tinyurl.com/583d56rb);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-position: center;
+    color: white;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #162938;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.logo{
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+.navigation a{
+    text-decoration: overline;
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navigation a::after{
+    
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100vw;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scalex(0);
+    transition: tranform.5s;
+    transform-origin:right ;
+}
+.navigation a:hover::after{
+    
+    transform-origin: left;
+    transform: scaleX(1);
+
+}
+.navigation .btnlogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    padding-right: 35px;
+    /* transition :5s; */
+}
+.navigation .btnlogin-popup:hover{
+    background: gray;
+    color: #162938;
+    text-decoration: none;
+
+}
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,5);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #162938;
+    background-color: white;
+
+}
+.wrapper .form-box{
+    width: 100%;
+    padding: 40px;
+    color: #162938;
+
+}
+.form-box h2{
+    font-size: #162938;
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+}
+/* .input-box label{
+    position: absolute;
+    top:50%;
+    left: 5px;
+    transform: translateY(-50);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+} */
+ .input-box input{
+    /* width: 100%;
+    height: 100%; */
+    /* background: transparent; */
+     border: black;
+     /* outline: none; */
+} 
+/* .input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #162938;
+    line-height: 57px;
+} */
+.btn{
+    width: 100%;
+    height: 45px;
+    background-color: #162938;
+    color: white;
+    border-radius: 10px;
+    text-decoration: white;
+}
+.remember-forgot{
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.remember-forgot a{
+    text-decoration: none;
+    color: black;
+}
+.login-register p {
+    font-weight: 500;
+    
+    display: flex;
+    justify-content: space-between;
+}
+.login-register a{
+    text-decoration: none;
+    color: black;
+}
+.logo .nevigation a{
+    background-color: black;
+    border-radius: 10px;
+}
+.logo .nevigation a:hover{
+    background-color: aqua;
+}
+.icon label{
+    color: black;
+    margin-left: 30px;
+}
+.icon input{
+    margin-left: 30px;
+    color: black;
+}
+.wrapper{
+    /* background-color: #162938; */
+}
+.input-box .icon{
+    border-color: black;
+}
+.btnlogin-popup{
+    transition-property: color;
+}
+.btnlogin-popup:hover{
+    color: #162938;
+}
+input{
+    border: 2px solid gray;
+}
